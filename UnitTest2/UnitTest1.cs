@@ -30,17 +30,17 @@ namespace UnitTest2
         [TestMethod]
         public void TestGetValueForBook()
         {
-            Assert.AreEqual(0.0, Utility.GetValueOfBook(b1));
-            Assert.AreEqual(0.0, Utility.GetValueOfBook(b2));
-            Assert.AreEqual(123.55, Utility.GetValueOfBook(b3));
+            Assert.AreEqual(0.0, MerchandiseRepository.GetValueOfMerchandise(b1));
+            Assert.AreEqual(0.0, MerchandiseRepository.GetValueOfMerchandise(b2));
+            Assert.AreEqual(123.55, MerchandiseRepository.GetValueOfMerchandise(b3));
         }
 
         [TestMethod]
         public void TestGetValueForAmulet()
         {
-            Assert.AreEqual(20.0, Utility.GetValueOfAmulet(a11));
-            Assert.AreEqual(27.5, Utility.GetValueOfAmulet(a12));
-            Assert.AreEqual(12.5, Utility.GetValueOfAmulet(a13));
+            Assert.AreEqual(20.0, MerchandiseRepository.GetValueOfMerchandise(a11));
+            Assert.AreEqual(27.5, MerchandiseRepository.GetValueOfMerchandise(a12));
+            Assert.AreEqual(12.5, MerchandiseRepository.GetValueOfMerchandise(a13));
         }
 
         [TestMethod]

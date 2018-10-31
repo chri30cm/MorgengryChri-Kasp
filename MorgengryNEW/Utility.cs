@@ -8,33 +8,33 @@ namespace MorgengryNEW
 {
     public class Utility
     {
-        public static double GetValueOfBook(Book book)
-        {            
-            double bookvalue = book.Price;
-            return bookvalue;
-        }
-        public static double GetValueOfAmulet(Amulet amulet)
-        {
-            Level q = amulet.Quality;
-            if (q == Level.low)
-            {
-                return 12.5;
-            }
+        //public static double GetValueOfBook(Book book)
+        //{
+        //    double bookvalue = book.Price;
+        //    return bookvalue;
+        //}
+        //public static double GetValueOfAmulet(Amulet amulet)
+        //{
+        //    Level q = amulet.Quality;
+        //    if (q == Level.low)
+        //    {
+        //        return 12.5;
+        //    }
 
-            else if (q == Level.medium)
-            {
-                return 20.0;
-            }
+        //    else if (q == Level.medium)
+        //    {
+        //        return 20.0;
+        //    }
 
-            else
-            {
-                return 27.5;
-            }
-        }
+        //    else
+        //    {
+        //        return 27.5;
+        //    }
+        //}
         public static double GetValueOfCourse(Course course)
         {
             int time = 0;
-            for (int i = 0; i < course.DurationInMinutes; i+=60)
+            for (int i = 0; i < course.DurationInMinutes; i += 60)
             {
                 time++;
             }
