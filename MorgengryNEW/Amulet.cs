@@ -21,7 +21,7 @@ namespace MorgengryNEW
         public Level Quality
         {
             get { return quality; }
-            set { quality = value; }
+            set {quality = value;}
         }
         public string Design
         {
