@@ -30,13 +30,11 @@ namespace MorgengryNEW
         public static double GetValueOfMerchandise(Merchandise merchandise)
         {
             double totalValue = 0.0;
-            double bookPrice = 0.0;
             Book bookMerch;
             if(merchandise is Book)
             {
                 bookMerch = (Book)merchandise;
-                bookPrice = bookMerch.Price;
-                totalValue = bookPrice;
+                totalValue = bookMerch.Price;
             }
             
 
